@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
+#website-setup
 url = "http://books.toscrape.com/catalogue/category/books_1/index.html"
 page = requests.get(url)
 soup = BeautifulSoup(page.content, 'html.parser')
