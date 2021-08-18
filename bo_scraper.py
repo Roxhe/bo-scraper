@@ -18,6 +18,7 @@ for title in titles:
     titles_string.append(title.string)
 print(titles_string)
 
+#data.csv-setup
 heading = ["title"]
 with open('data.csv', 'w') as csv_file:
     writer = csv.writer(csv_file, delimiter=',')
