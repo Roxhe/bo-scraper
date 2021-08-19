@@ -4,20 +4,21 @@ import csv
 
 #website-setup
 url = "http://books.toscrape.com/catalogue/category/books_1/index.html"
-page = requests.get(url)
+page = requests.get(url) 
 soup = BeautifulSoup(page.content, 'html.parser')
 
 #add-all-pages
-token = "http://books.toscrape.com/catalogue/category/books_1/page-"
+sample_page = "http://books.toscrape.com/catalogue/category/books_1/page-"
 
-def get_pages(token, nb):
+def get_pages(sample_page, nb):
     pages = []
     for i in range(1,nb+1):
-        j = token + str(i) + ".html"
+        j = sample_page + str(i) + ".html"
         pages.append(j)
     return pages
-pages = get_pages(token,20)
+pages = get_pages(sample_page,20)
 del pages[0]
+pages.insert(0, url)
 print(pages)
 
 #book-titles
