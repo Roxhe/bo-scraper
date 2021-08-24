@@ -1,3 +1,5 @@
+url = "https://books.toscrape.com/index.html"
+sample_page = "http://books.toscrape.com/catalogue/category/books_1/page-"
 
 def get_pages(sample_page, nb):
     pages = []
