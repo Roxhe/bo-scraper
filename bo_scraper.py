@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
+from scripts import get_pages
 
 #website-setup
 url = "http://books.toscrape.com/catalogue/category/books_1/index.html"
@@ -10,20 +11,7 @@ soup = BeautifulSoup(page.content, 'html.parser')
 #add-all-pages
 sample_page = "http://books.toscrape.com/catalogue/category/books_1/page-"
 
-def get_pages(sample_page, nb):
-    """ Description of what get_pages does.
-    
-    Args :
-        sample_pages (str): base of the url that will be copied to create the list.
-        nb(int) = number of loop executions.
-        
-    Returns :
-        list: list containing your created urls from the base."""
-    pages = []
-    for i in range(1,nb+1):
-        j = sample_page + str(i) + ".html"
-        pages.append(j)
-    return pages
+
 pages = get_pages(sample_page,50)
 del pages[0]
 pages.insert(0, url)
