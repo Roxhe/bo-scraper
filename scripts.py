@@ -1,13 +1,14 @@
-url = "https://books.toscrape.com/index.html"
-sample_page = "http://books.toscrape.com/catalogue/category/books_1/page-"
-
-def get_pages(sample_page, nb):
+def get_pages(sample_url, nb):
+    """ Description of what get_pages does.
+    
+    Args :
+        sample_url (str): base of the url that will be copied to create the list.
+        nb(int) = number of loop executions.
+        
+    Returns :
+        list: list containing your created urls from the base."""
     pages = []
     for i in range(1,nb+1):
-        j = sample_page + str(i) + ".html"
+        j = sample_url + str(i) + ".html"
         pages.append(j)
     return pages
-pages = get_pages(sample_page,20)
-del pages[0]
-pages.insert(0, url)
-print(pages)
