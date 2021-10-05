@@ -1,5 +1,6 @@
 from pandas.core.frame import DataFrame
 import requests
+import os
 from bs4 import BeautifulSoup as bs
 import pandas
 from functions import get_pages, urlbooks, url_to_jpg, books_data_parse
@@ -27,6 +28,8 @@ result.head()
 
 pd_image_url = pandas.DataFrame({'Images Url': books_data_funct.get('image_url')})
 pd_image_url.to_csv(r"image_url.csv", index=False, header=True)
+
+os.mkdir('images')
 
 filename = "image_url.csv"
 file_path = 'images/'
