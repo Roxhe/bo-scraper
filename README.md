@@ -72,4 +72,4 @@ Or manually by double-clicking on `main.py` in the project folder!
 
 #### Result : 
 
-It will retrieve different data for each book and create a csv file per book category, a csv file with the data of all books, a csv file with the URLs of the covers of each book and an image folder with the covers of all books in jpg format.
+It will retrieve different data for each book and create a csv file per book category, a csv file with the data of all books, a csv file with the URLs of the covers of each book and an `images` folder with the covers of all books in jpg format.
