@@ -32,7 +32,7 @@ Toujours dans le dossier du projet, exécuter : \
 Dans le dossier du projet avec git et la commande : \
 `python main.py`
 
-Ou manuellement en double cliquant sur `main.py` dans le dossier du projet. \
+Ou manuellement en double cliquant sur `main.py` dans le dossier du projet. 
 
 Puis entrer un nombre en 1 et 50, correspondant aux nombres de pages que vous souhaitez scraper.
 
@@ -75,7 +75,7 @@ Still in the project folder, run : \
 In the project folder with git and the command : \
 `python main.py`
 
-Or manually by double-clicking on `main.py` in the project folder! \
+Or manually by double-clicking on `main.py` in the project folder! 
 
 Then enter a number between 1 and 50 according to the numbers of pages that you want to parse.
 
