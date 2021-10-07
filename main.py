@@ -5,13 +5,17 @@ from bs4 import BeautifulSoup as bs
 import pandas
 from functions import get_pages, urlbooks, url_to_jpg, books_data_parse
 
+
+print("Please enter a number between 1 and 50 of pages to scrap :")
+NUMBER_OF_PAGES = input()
+
 print("Work in progress, can take few minutes")
 print("...")
 url = "https://books.toscrape.com/index.html"
 req = requests.get(url)
 soup = bs(req.content, "html.parser")
 
-pages = get_pages("http://books.toscrape.com/catalogue/category/books_1/page-",50)
+pages = get_pages("http://books.toscrape.com/catalogue/category/books_1/page-",int(NUMBER_OF_PAGES))
 pages
 del pages[0]
 pages.insert(0, url)
