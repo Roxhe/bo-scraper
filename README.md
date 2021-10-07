@@ -6,7 +6,7 @@ Ce travail est issu du projet 2 de la formation DA Python OpenClassrooms.
 
 Il est développé avec [Python 3.9.6](https://www.python.org/downloads/release/python-396/) sur Windows 10 Pro.
 
-/!\ - Attention, le dossier dans lequel le code s'exécute ne doit pas contenir de dossier nommer 'images'
+/!\ - Attention, le dossier dans lequel le code s'exécute ne doit pas contenir de dossier nommer 'images'  \
     - Lire les csv en UTF-8
 
 ### Installer et éxécuter le programme
@@ -48,7 +48,7 @@ This work come from the project 2 of the DA Python formation OpenClassrooms.
 
 It is developed with [Python 3.9.6](https://www.python.org/downloads/release/python-396/) on Windows 10 Pro.
 
-/!\ - Warning, the folder in which the code is executed must not contain a folder named 'images'
+/!\ - Warning, the folder in which the code is executed must not contain a folder named 'images'  \
     - Read the csv in UTF-8
 ### Install and run the program
 
